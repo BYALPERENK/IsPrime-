@@ -1,0 +1,1 @@
+C:\VisualStudio2022Codes\IsPrime\x64\Debug\IsPrime.exe
