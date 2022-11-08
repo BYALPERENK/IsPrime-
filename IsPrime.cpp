@@ -1,7 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
 #include <chrono>
-#include <fstream>
 
 using namespace std;
 
@@ -23,7 +22,7 @@ bool isPrime(long long int n)
 
 int main()
 {
-    auto start = std::chrono::high_resolution_clock::now();
+    auto start = chrono::high_resolution_clock::now();
     long long int x;
     cout << "Which number is prime?" << endl;
     cin >> x;
@@ -36,6 +35,6 @@ int main()
     {
         cout << "No" << endl;
     }
-    auto finish = std::chrono::high_resolution_clock::now();
+    auto finish = chrono::high_resolution_clock::now();
     cout << chrono::duration_cast<chrono::microseconds>(finish - start).count() << " microseconds\n";
 }
